@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* Header */
+#header {
+  left: 0;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#header .header-logo {
+  height: 27px;
+  width: auto;
+}
+
+#header > .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#header nav ul li {
+  font-weight: 600;
+  margin-right: 7px;
+}
+
+#header nav ul li:last-child {
+  margin-right: 0;
+}
+
+#header nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/* Hero */
+#hero {
+  background: url("../img/header-bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 0;
+  position: relative;
+  width: 100%;
+}
+
+#hero h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+#hero h1 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #fff;
+}
+
+#hero p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+
+#hero .hero-button {
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+#hero .hero-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#hero::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#hero * {
+  position: relative;
+  z-index: 1;
+}
