@@ -4,7 +4,13 @@
   padding: 0;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+textarea,
+input {
   font-family: Nunito, sans-serif;
 }
 
@@ -14,6 +20,7 @@ body {
 }
 
 /* Header */
+
 #header {
   left: 0;
   padding: 20px 0;
@@ -203,8 +210,12 @@ body {
 }
 
 /* Freelancer */
+#freelancer > .container {
+  display: flex;
+  flex-direction: column;
+}
 
-#freelancer button {
+#freelancer a {
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -218,6 +229,7 @@ body {
   margin: 24px auto 0;
   display: block;
   line-height: 21px;
+  text-decoration: none;
 }
 
 /* Our client */
@@ -388,11 +400,117 @@ body {
 .contact-us-icon-image {
   width: 80px;
   height: 80px;
-  margin: 0 auto;
+  margin: 0 auto 16px;
   display: block;
 }
 
+.contact-us-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.contact-us-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-text {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact-us-number {
+  margin-bottom: 16px;
+  color: #6c757d;
+  text-align: center;
+}
+
+#contact-us .form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+#contact-us .form-input-group {
+  display: flex;
+}
+
+#contact-us .form .form-input-email {
+  margin-left: 20px;
+}
+
+#contact-us .form .form-button {
+  align-self: flex-end;
+  padding: 15px 32px;
+  background-color: #e65f78;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.6px;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#contact-us .form input,
+#contact-us .form textarea {
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  min-height: 50px;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  padding: 70px;
+  background-color: #242424;
+}
+
+footer .icons-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+footer .list-inline-item {
+  width: 42px;
+  margin-right: 15px;
+}
+
+footer .list-inline-item:last-child {
+  margin-right: 0;
+}
+
+footer .list-inline-item a {
+  display: block;
+  border-radius: 50%;
+  background-color: rgba(241, 241, 241, 0.08);
+}
+
+footer .list-inline-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+footer p {
+  color: #6c757d;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
 /* Generic */
+
 .section {
   background-color: #fff;
   padding-bottom: 100px;
